@@ -12,32 +12,6 @@ A Flutter application demonstrating real-time delivery tracking with simulated d
 - **Interactive Bottom Sheet**: Draggable bottom sheet with driver details and delivery information
 - **Mock Location Service**: Simulated WebSocket-like stream emitting location updates every 2-3 seconds
 
-## 🏗️ Architecture
-
-This project follows **Clean Architecture** principles with **MVVM** pattern and **BLoC** state management:
-
-```
-lib/
-├── core/                    # Core utilities and constants
-│   ├── constants/          # App-wide constants
-│   └── utils/              # Utility functions
-├── domain/                  # Business Logic Layer
-│   ├── entities/           # Domain models
-│   ├── repositories/       # Repository interfaces
-│   └── usecases/           # Business use cases
-├── data/                    # Data Layer
-│   ├── datasources/        # Data sources (Mock services)
-│   ├── models/             # Data models
-│   └── repositories/       # Repository implementations
-└── presentation/            # Presentation Layer
-    ├── bloc/               # BLoC state management
-    │   ├── map/           # Map-related BLoC
-    │   └── tracking/      # Tracking BLoC
-    ├── screens/            # UI screens
-    ├── viewmodels/         # ViewModels
-    └── widgets/            # Reusable widgets
-```
-
 ### Architecture Layers
 
 1. **Domain Layer** (Business Logic)
@@ -196,26 +170,3 @@ Modify map settings in:
 - `MapBloc`: Camera behavior
 - `TrackingScreen`: Map styling
 
-## 📄 License
-
-This project is created for interview/assignment purposes.
-
-## 👨‍💻 Developer Notes
-
-- All code follows Flutter best practices
-- Clean Architecture ensures testability and maintainability
-- BLoC pattern provides predictable state management
-- Mock service can be easily replaced with real WebSocket implementation
-- Code is well-documented and self-explanatory
-
-## 🐛 Known Issues
-
-None at the moment. The app is fully functional with simulated data.
-
-## 📞 Support
-
-For questions or issues, please refer to the code comments or create an issue in the repository.
-
----
-
-**Built with ❤️ using Flutter**
